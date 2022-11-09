@@ -1,0 +1,85 @@
+#tic-tac-container{
+    height: 84vh;
+    width: 60vh;
+    background-color: rgb(248, 176, 223);
+    border-radius: 2vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding:1vh 12vh;
+}
+.grid-box{
+    border:1px solid rgb(55, 203, 50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 44px;
+    color: rgb(253, 9, 9);
+}
+#img1{
+height:12vh;
+width: 12vh;
+margin: 0px;
+}
+#img2{
+    height:12vh;
+    width: 44vh;
+    margin: 0px;
+}
+#header{
+    grid-column: 1/4;
+}
+#upper-left{
+    border-left-style: none;
+    border-top-style: none;
+}
+#upper-middle{
+    border-top-style: none;
+}
+#upper-right{
+    border-top-style: none;
+    border-right-style: none;
+}
+#middle-left{
+    border-left-style: none;
+}
+
+#middle-right{
+    border-right-style: none;
+}
+#bottom-left{
+    border-left-style: none ;
+    border-bottom-style: none ;
+}
+#bottom-middle{
+    border-bottom-style: none ;
+}
+#bottom-right{
+    border-bottom-style: none ;
+    border-right-style: none ;
+}
+.grid-box:hover{
+    background-color: rgb(128, 240, 182);
+}
+#result-box{
+    display: flex;
+    /* border: 2px solid green; */
+    grid-column: 1/4;
+    justify-content: space-between;
+    align-items: center
+}
+#winner-box{
+ font-weight: bold;
+ font-size: 34px;
+ color: rgb(230, 16, 16);
+}
+#restart-btn{
+ padding:0.5vh 2vh;
+ border-radius: 4px;
+ background-color: darkgreen;
+ color: #fff;
+}
+#restart-btn:hover{
+    background-color: rgb(250, 43, 147);
+}
